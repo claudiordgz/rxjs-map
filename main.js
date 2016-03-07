@@ -5,7 +5,7 @@ var Rx = require('rx-dom'),
     leafletJs = require('leaflet/dist/leaflet.js');
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    let QUAKE_URL = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojsonp',
+    let QUAKE_URL = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojsonp',
         map = L.map('map').setView([33.858631, -118.279602], 7);
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
     let quakes = Rx.Observable
