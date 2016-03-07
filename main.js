@@ -1,6 +1,8 @@
 /*globals document, L, window */
 /* jshint node: true */
-var Rx = require('rx-dom');
+var Rx = require('rx-dom'),
+    leafletCss = require('leaflet/dist/leaflet.css'),
+    leafletJs = require('leaflet/dist/leaflet.js');
 
 document.addEventListener("DOMContentLoaded", function(event) {
     let QUAKE_URL = 'http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojsonp',
