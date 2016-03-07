@@ -22,7 +22,9 @@ module.exports = {
                 exclude: /(node_modules)/,
                 // Only run `.js` and `.jsx` files through Babel
                 test: /\.js?$/
-            }
+            },
+            { test: /\.css$/, loader: "style!css"},
+            { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
         ],
         postLoaders: [
             {
